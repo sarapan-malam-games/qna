@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/character/variants/enemy/Enemy.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/character/variants/player/Player.tscn" type="PackedScene" id=2]
+
+[node name="Level" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 110, 291 )
+rotate_with_mouse = true
+
+[node name="Enemy" parent="." instance=ExtResource( 1 )]
+position = Vector2( 362, 162 )
+rotation = 2.24173
+
+[node name="Enemy2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 504, 332 )
+rotation = 3.09647
+
+[node name="Enemy3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 196, 290 )
+
+[node name="Enemy4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 203, 428 )
+rotation = -2.78821
