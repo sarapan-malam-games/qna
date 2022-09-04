@@ -57,8 +57,8 @@ func get_nearest_enemy() -> KinematicBody2D:
 
 
 func _draw() -> void:
-	draw_line(Vector2.ZERO, Vector2(0, $AttackArea/CollisionShape2D.shape.radius).rotated(deg2rad(-field_of_view)), Color.green, 2.0)
-	draw_line(Vector2.ZERO, Vector2(0, $AttackArea/CollisionShape2D.shape.radius).rotated(deg2rad(-field_of_view*3)), Color.green, 2.0)
+	draw_line(Vector2.ZERO, Vector2($AttackArea/CollisionShape2D.shape.radius, 0).rotated(deg2rad(field_of_view)), Color.green, 2.0)
+	draw_line(Vector2.ZERO, Vector2($AttackArea/CollisionShape2D.shape.radius, 0).rotated(deg2rad(-field_of_view)), Color.green, 2.0)
 	draw_arc(Vector2.ZERO, $AttackArea/CollisionShape2D.shape.radius, deg2rad(-field_of_view), deg2rad(field_of_view), 20, Color.green, 2.0)
 
 
